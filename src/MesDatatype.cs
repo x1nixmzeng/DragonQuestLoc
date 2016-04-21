@@ -15,7 +15,7 @@ namespace DragonQuestLoc
 
         struct MesKeyDeclaration
         {
-            public uint ActiveFlag;
+            public uint ActiveCount;
             public uint Offset;
         }
 
@@ -57,10 +57,7 @@ namespace DragonQuestLoc
 
             foreach (MesKeyDeclaration kd in data.key_listing)
             {
-                if (kd.ActiveFlag != 0)
-                {
-                    num_active++;
-                }
+                num_active += kd.ActiveCount;
             }
 
             return num_active;
@@ -76,7 +73,7 @@ namespace DragonQuestLoc
             {
                 MesKeyDeclaration temp;
 
-                temp.ActiveFlag = br.ReadUInt32();
+                temp.ActiveCount = br.ReadUInt32();
                 temp.Offset = br.ReadUInt32();
 
                 keydec_list.Add(temp);
@@ -93,7 +90,7 @@ namespace DragonQuestLoc
             // key will not have changed either
             foreach( MesKeyDeclaration keydec in data.key_listing )
             {
-                bw.Write(keydec.ActiveFlag);
+                bw.Write(keydec.ActiveCount);
                 bw.Write(keydec.Offset);
             }
 
