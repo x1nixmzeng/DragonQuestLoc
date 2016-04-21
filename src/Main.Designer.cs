@@ -37,10 +37,10 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -70,17 +70,17 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Key";
+            this.columnHeader1.Text = "Name";
             this.columnHeader1.Width = 150;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Original Value";
+            this.columnHeader2.Text = "Current Translation";
             this.columnHeader2.Width = 350;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Modified Value";
+            this.columnHeader3.Text = "Modified Translation";
             this.columnHeader3.Width = 350;
             // 
             // menuStrip1
@@ -119,14 +119,6 @@
             this.exportToolStripMenuItem.Text = "&Export...";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.Filter = "Joker 3 (*.MES)|*.mes";
-            // 
-            // saveFileDialog1
-            // 
-            this.saveFileDialog1.Filter = "Joker 3 (*.MES)|*.mes";
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -138,6 +130,14 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Filter = "Joker 3 (*.MES)|*.mes";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "Joker 3 (*.MES)|*.mes";
             // 
             // toolStripContainer1
             // 
